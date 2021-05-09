@@ -7,8 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 import java.util.List;
 
-
-@Document
+// 这边需要指定查询的是哪一个集合 collection
+@Document(collection = "log")
 public class LogEntity {
 
     @Id
